@@ -1,7 +1,8 @@
 NAME 		= so_long
+CC			= cc
 CFLAGS		= -Wall -Werror -Wextra
 MLX			=  $(LIBS) lib/libmlx/libglfw3.a -framework Cocoa -framework OpenGL -framework IOKit
-CC			= cc
+
 FILES		= src/solong.c \
 				src/print.c \
 				src/errors.c \
@@ -21,7 +22,10 @@ GNL = lib/getnextline
 PRINTF = lib/printf
 MLXPATH = lib/libmlx
 
-#RULES
+# ************* #
+#     RULES     #
+# ************* #
+
 all: $(NAME)
 
 $(NAME): $(LIBS) $(OBJ)
