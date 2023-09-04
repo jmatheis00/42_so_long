@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 14:00:56 by jmatheis          #+#    #+#             */
-/*   Updated: 2022/11/29 08:52:37 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/04 16:05:27 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ static void	key_hook(mlx_key_data_t keydata, void *param)
 
 	vars = param;
 	if (keydata.key == MLX_KEY_ESCAPE)
+	{
 		mlx_close_window(vars->mlx);
+		exit_and_free(vars, 0);
+	}
 	if (keydata.key == MLX_KEY_W && keydata.action == MLX_PRESS)
 		playerup(vars);
 	if (keydata.key == MLX_KEY_S && keydata.action == MLX_PRESS)
