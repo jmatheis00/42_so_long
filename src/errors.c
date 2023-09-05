@@ -6,7 +6,7 @@
 /*   By: jmatheis <jmatheis@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 23:38:51 by jmatheis          #+#    #+#             */
-/*   Updated: 2023/09/04 16:00:03 by jmatheis         ###   ########.fr       */
+/*   Updated: 2023/09/05 20:57:25 by jmatheis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ void	exit_and_free(t_vars *vars, int status)
 	}	
 	if (vars->mlx)
 		mlx_terminate(vars->mlx);
-	system("leaks so_long");
 	exit (status);
 }
 
