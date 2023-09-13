@@ -27,4 +27,4 @@ You can choose one of the following example maps: `./maps/map1.ber` `./maps/map2
 
 Use the `W`, `A`, `S`, and `D` keys to move the main character.
 The objective of the game is to collect all the collectibles and then exit the game through the marked endpoint.
-In other cases, clicking on the cross on the window’s frame or pressing `ÈSC` closes the window.
+In other cases, clicking on the cross on the window’s frame or pressing `ESC` closes the window.
